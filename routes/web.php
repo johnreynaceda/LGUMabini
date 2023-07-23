@@ -17,6 +17,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
+Route::get('/About-us', function () {
+    return view('pages.about');
+})->name('about');
+Route::get('/barangays', function () {
+    return view('pages.barangays');
+})->name('barangays');
+Route::get('/offices', function () {
+    return view('pages.offices');
+})->name('offices');
+Route::get('/contact-us', function () {
+    return view('pages.contact-us');
+})->name('contact-us');
 
 //registration
 Route::get('/resident-registration', function () {

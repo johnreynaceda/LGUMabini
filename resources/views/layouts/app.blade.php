@@ -93,26 +93,26 @@
                         href="#">
                         Home
                     </a>
-                    <a class="px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
-                        href="#">
+                    <a class="{{ request()->routeIs('about') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
+                        href="{{ route('about') }}">
                         About Us
                     </a>
 
-                    <a class="px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
-                        href="#">
+                    <a class="{{ request()->routeIs('barangays') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
+                        href="{{ route('barangays') }}">
                         Barangays
                     </a>
                     <a class="px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
                         href="#">
                         Tourism
                     </a>
-                    <a class="px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
-                        href="#">
+                    <a class="{{ request()->routeIs('offices') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
+                        href="{{ route('offices') }}">
                         Office
                     </a>
 
-                    <a class="px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
-                        href="#">
+                    <a class="{{ request()->routeIs('contact-us') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
+                        href="{{ route('contact-us') }}">
                         Contact us
                     </a>
                     <a class="{{ request()->routeIs('registration') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
