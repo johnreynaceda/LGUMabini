@@ -3,20 +3,27 @@
 namespace App\Http\Livewire;
 
 use App\Models\Resident;
+use DB;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use WireUi\Traits\Actions;
 
 class SendSms extends Component
 {
+    use WithFileUploads;
     use Actions;
     public $barangay;
     public $message;
+
+    public $firstname, $middlename, $lastname, $contact_number, $barangay_name, $image, $update_image, $address, $year, $resident_id;
+
+    public $edit_modal = false;
     public function render()
     {
         return view('livewire.send-sms', [
             'lists' => $this->barangay ? Resident::when($this->barangay, function ($query) {
                 $query->where('barangay', $this->barangay);
-            })->where('status',1)->get() : [],
+            })->where('status', 1)->get() : [],
         ]);
     }
 
@@ -61,6 +68,54 @@ class SendSms extends Component
         $this->reset('barangay', 'message');
         return $output;
 
+    }
 
+    public function updateData($id)
+    {
+        $resident = Resident::where('id', $id)->first();
+
+        $this->firstname = $resident->firstname;
+        $this->middlename = $resident->middlename;
+        $this->lastname = $resident->lastname;
+        $this->contact_number = $resident->contact_number;
+        $this->barangay_name = $resident->barangay;
+        $this->address = $resident->address;
+        $this->year = $resident->no_of_years;
+        $this->image = $resident->upload_path;
+        $this->resident_id = $resident->id;
+        $this->edit_modal = true;
+    }
+
+    public function updateRecords()
+    {
+        $resident = Resident::where('id', $this->resident_id)->first();
+        DB::beginTransaction();
+        $resident->update([
+            'firstname' => $this->firstname,
+            'middlename' => $this->middlename,
+            'lastname' => $this->lastname,
+            'contact_number' => $this->contact_number,
+            'barangay' => $this->barangay_name,
+            'address' => $this->address,
+            'no_of_years' => $this->year,
+            'upload_path' => $this->update_image ? $this->update_image->store('Uploaded IDs', 'public') : $this->image,
+        ]);
+        $this->dialog()->success(
+            $title = 'Update Completed',
+            $description = 'Resident Information has been updated. Thank You.'
+        );
+        DB::commit();
+
+        $this->reset('firstname', 'middlename', 'lastname', 'contact_number', 'barangay_name', 'address', 'year', 'image', 'update_image', 'resident_id', 'edit_modal');
+        $this->edit_modal = false;
+    }
+
+    public function deleteData($id)
+    {
+        $resident = Resident::where('id', $id)->first()->delete();
+        $this->dialog()->success(
+            $title = 'Delete Completed',
+            $description = 'Resident Information has been deleted. Thank You.'
+        );
     }
 }

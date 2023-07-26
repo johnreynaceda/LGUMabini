@@ -44,15 +44,25 @@
                                     <a href="{{ Storage::url($item->upload_path) }}" target="_blank"
                                         class="text-sm hover:text-green-600">View</a>
                                 </td>
-                                <td class="border border-gray-700 text-gray-600  px-3 py-1">
-                                    <x-button label="Approve"
-                                        wire:click="approve(
+                                <td class="border w-px border-gray-700 text-gray-600  px-3 py-1">
+                                    <div class="flex  items-center space-x-2">
+                                        <x-button label="Approve"
+                                            wire:click="approve(
                                         {{ $item->id }}
                                     )"
-                                        spinner="approve(
+                                            spinner="approve(
                                         {{ $item->id }}
                                     )"
-                                        positive sm rounded class="font-medium" right-icon="thumb-up" />
+                                            positive sm rounded class="font-medium" right-icon="thumb-up" />
+                                        <x-button label="Disapprove"
+                                            wire:click="disApprove(
+                                        {{ $item->id }}
+                                    )"
+                                            spinner="disApprove(
+                                        {{ $item->id }}
+                                    )"
+                                            negative sm rounded class="font-medium" right-icon="thumb-down" />
+                                    </div>
                                 </td>
                             </tr>
                         @empty
