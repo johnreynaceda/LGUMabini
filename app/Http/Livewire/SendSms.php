@@ -25,7 +25,7 @@ class SendSms extends Component
         return view('livewire.send-sms', [
             'lists' => $this->barangay ? Resident::when($this->barangay, function ($query) {
                 $query->where('barangay', $this->barangay);
-            })->where('status', 1)->get() : [],
+            })->where('status', 1)->orderBy('lastname', 'ASC')->get() : [],
         ]);
     }
 

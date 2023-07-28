@@ -54,7 +54,7 @@
                                     <li class="p-1 flex space-x-3 items-center justify-between border-b">
                                         <div class="flex space-x-3">
                                             <x-checkbox id="checkbox" wire:click="addUser({{ $list->id }})" />
-                                            <span class="w-40">{{ $list->firstname . ' ' . $list->lastname }}</span>
+                                            <span class="w-40">{{ $list->lastname . ', ' . $list->firstname }}</span>
                                         </div>
                                         <div class="flex items-center space-x-4">
                                             <button wire:click="updateData({{ $list->id }})"
