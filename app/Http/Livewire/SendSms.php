@@ -15,6 +15,8 @@ class SendSms extends Component
     public $barangay;
     public $message;
 
+    public $is_checked = [];
+
     public $firstname, $middlename, $lastname, $contact_number, $barangay_name, $image, $update_image, $address, $year, $resident_id;
 
     public $edit_modal = false;
@@ -36,7 +38,7 @@ class SendSms extends Component
 
         $residents = Resident::where('barangay', $this->barangay)->pluck('contact_number')->toArray();
 
-        $numbers = implode(',', $residents);
+        $numbers = implode(',', collect($this->is_checked)->pluck('number')->toArray());
         $api_key = '1aaad08e0678a1c60ce55ad2000be5bd';
         $sender = 'SEMAPHORE';
         $ch = curl_init();
@@ -66,7 +68,9 @@ class SendSms extends Component
             $description = 'Message has been sent to the residents of ' . $this->barangay . '. Thank You!'
         );
         $this->reset('barangay', 'message');
+
         return $output;
+
 
     }
 
@@ -117,5 +121,31 @@ class SendSms extends Component
             $title = 'Delete Completed',
             $description = 'Resident Information has been deleted. Thank You.'
         );
+    }
+
+    public function addUser($id)
+    {
+        $resident = Resident::where('id', $id)->first();
+
+        $foundKey = null;
+        foreach ($this->is_checked as $key => $item) {
+            if ($item['id'] == $resident->id) {
+                // If the current resident ID is found, store the key/index of the item in the $foundKey variable.
+                $foundKey = $key;
+                break;
+            }
+        }
+
+        if ($foundKey !== null) {
+            // If $foundKey is not null, it means the current resident ID is found in the array, so remove it.
+            unset($this->is_checked[$foundKey]);
+        } else {
+            // If $foundKey is null, it means the current resident ID is not in the array, so add it.
+            $this->is_checked[] = [
+                'id' => $resident->id,
+                'number' => $resident->contact_number,
+            ];
+        }
+
     }
 }

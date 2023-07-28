@@ -52,7 +52,10 @@
                             <ul class="p-4">
                                 @forelse ($lists as $list)
                                     <li class="p-1 flex space-x-3 items-center justify-between border-b">
-                                        <span class="w-40">{{ $list->firstname . ' ' . $list->lastname }}</span>
+                                        <div class="flex space-x-3">
+                                            <x-checkbox id="checkbox" wire:click="addUser({{ $list->id }})" />
+                                            <span class="w-40">{{ $list->firstname . ' ' . $list->lastname }}</span>
+                                        </div>
                                         <div class="flex items-center space-x-4">
                                             <button wire:click="updateData({{ $list->id }})"
                                                 class="flex space-x-1 items-center text-sm text-green-500 fill-green-500 hover:text-green-700 hover:fill-green-700">
@@ -82,6 +85,7 @@
                                 @endforelse
                             </ul>
                         </div>
+                        {{-- @dump($is_checked) --}}
                     </div>
                     <div class="mt-3">
                         <x-textarea label="Message Area" wire:model.defer="message" placeholder="write message" />
