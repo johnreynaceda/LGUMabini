@@ -38,7 +38,11 @@ class SendSms extends Component
 
         $residents = Resident::where('barangay', $this->barangay)->pluck('contact_number')->toArray();
 
-        $numbers = implode(',', collect($this->is_checked)->pluck('number')->toArray());
+        if ($this->is_checked == null) {
+            $numbers = implode(',', $residents);
+        } else {
+            $numbers = implode(',', collect($this->is_checked)->pluck('number')->toArray());
+        }
         $api_key = '1aaad08e0678a1c60ce55ad2000be5bd';
         $sender = 'SEMAPHORE';
         $ch = curl_init();

@@ -92,8 +92,8 @@
                     </div>
                     <div class="mt-8 flex justify-end items-center space-x-3">
                         <x-button label="Clear" rounded class="font-bold" />
-                        <x-button label="Send SMS" wire:click="sendSMS" spinner="sendSMS" right-icon="annotation"
-                            positive rounded class="font-bold" />
+                        <x-button label="{{ $is_checked == null ? 'Send to All' : 'Send SMS' }}" wire:click="sendSMS"
+                            spinner="sendSMS" right-icon="annotation" positive rounded class="font-bold" />
                     </div>
                 </div>
             </div>
