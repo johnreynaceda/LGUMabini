@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\HistorySms;
 use App\Models\Resident;
 use DB;
 use Livewire\Component;
@@ -20,6 +21,9 @@ class SendSms extends Component
     public $firstname, $middlename, $lastname, $contact_number, $barangay_name, $image, $update_image, $address, $year, $resident_id;
 
     public $edit_modal = false;
+    public $history_modal = false;
+
+    public $histories = [];
     public function render()
     {
         return view('livewire.send-sms', [
@@ -36,46 +40,60 @@ class SendSms extends Component
             'message' => 'required',
         ]);
 
+        $residentss = Resident::where('barangay', $this->barangay)->get();
         $residents = Resident::where('barangay', $this->barangay)->pluck('contact_number')->toArray();
 
-        // if ($this->is_checked == null) {
-        //     $numbers = implode(',', $residents);
-        // } else {
-        //     $numbers = implode(',', collect($this->is_checked)->pluck('number')->toArray());
-        // }
-        // $api_key = '1aaad08e0678a1c60ce55ad2000be5bd';
-        // $sender = 'SEMAPHORE';
-        // $ch = curl_init();
-        // $parameters = [
-        //     'apikey' => $api_key,
-        //     'number' => $numbers,
-        //     'message' => $this->message,
-        //     'sendername' => $sender,
-        // ];
-        // curl_setopt(
-        //     $ch,
-        //     CURLOPT_URL,
-        //     'https://semaphore.co/api/v4/messages'
-        // );
-        // curl_setopt($ch, CURLOPT_POST, 1);
-        // curl_setopt(
-        //     $ch,
-        //     CURLOPT_POSTFIELDS,
-        //     http_build_query($parameters)
-        // );
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        // $output = curl_exec($ch);
-        // curl_close($ch);
+        if ($this->is_checked == null) {
+            $numbers = implode(',', $residents);
+            $history = Resident::where('barangay', $this->barangay)->get();
+        } else {
+            $numbers = implode(',', collect($this->is_checked)->pluck('number')->toArray());
+            $history = Resident::whereIn('id', collect($this->is_checked)->pluck('id')->toArray())->get();
+        }
+        $api_key = '1aaad08e0678a1c60ce55ad2000be5bd';
+        $sender = 'SEMAPHORE';
+        $ch = curl_init();
+        $parameters = [
+            'apikey' => $api_key,
+            'number' => $numbers,
+            'message' => $this->message,
+            'sendername' => $sender,
+        ];
+        curl_setopt(
+            $ch,
+            CURLOPT_URL,
+            'https://semaphore.co/api/v4/messages'
+        );
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt(
+            $ch,
+            CURLOPT_POSTFIELDS,
+            http_build_query($parameters)
+        );
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $output = curl_exec($ch);
+        curl_close($ch);
 
-        // $this->dialog()->success(
-        //     $title = 'Message Sent',
-        //     $description = 'Message has been sent to the residents of ' . $this->barangay . '. Thank You!'
-        // );
-        // $this->reset('barangay', 'message');
+        foreach ($history as $key => $value) {
+            HistorySms::create([
+                'resident_id' => $value->id,
+            ]);
+        }
 
-        // return $output;
+        $this->dialog()->success(
+            $title = 'Message Sent',
+            $description = 'Message has been sent to the residents of ' . $this->barangay . '. Thank You!'
+        );
+        $this->reset('barangay', 'message');
+
+        return $output;
 
 
+    }
+
+    public function clearField()
+    {
+        $this->reset('barangay', 'message', 'is_checked');
     }
 
     public function updateData($id)
@@ -160,5 +178,11 @@ class SendSms extends Component
         ]);
 
         $residents = Resident::pluck('contact_number')->toArray();
+    }
+
+    public function openHistory()
+    {
+
+        $this->history_modal = true;
     }
 }

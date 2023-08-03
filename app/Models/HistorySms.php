@@ -5,14 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Resident extends Model
+class HistorySms extends Model
 {
     use HasFactory;
-
     protected $guarded = [];
 
-    public function historySms()
+    public function resident()
     {
-        return $this->hasMany(HistorySms::class);
+        return $this->belongsTo(Resident::class);
     }
 }

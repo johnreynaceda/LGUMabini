@@ -1,4 +1,4 @@
-<div>
+<div x-data>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white bg-opacity-80 overflow-hidden shadow-sm sm:rounded-lg">
@@ -95,7 +95,10 @@
                         <x-textarea label="Message Area" wire:model.defer="message" placeholder="write message" />
                     </div>
                     <div class="mt-8 flex justify-end items-center space-x-3">
-                        <x-button label="Clear" rounded class="font-bold" />
+                        <x-button label="History" wire:click="openHistory" spinner="openHistory" negative outline
+                            right-icon="document-text" rounded class="font-bold" />
+                        <x-button label="Clear" wire:click="clearField" spinner="clearField" rounded
+                            class="font-bold" />
                         <x-button label="{{ $is_checked == null ? 'Send to All' : 'Send SMS' }}" wire:click="sendSMS"
                             spinner="sendSMS" right-icon="annotation" positive rounded class="font-bold" />
                     </div>
@@ -176,6 +179,52 @@
                     <x-button flat label="Cancel" x-on:click="close" />
                     <x-button positive label="Update Changes" wire:click="updateRecords" spinner="updateRecords"
                         right-icon="arrow-right" rounded class="font-bold " />
+                </div>
+            </x-slot>
+        </x-card>
+    </x-modal>
+
+    <x-modal wire:model.defer="history_modal" max-width="6xl" align=center>
+        <x-card title="SMS HISTORY">
+            <div>
+                <div class="flex justify-end">
+                    <x-button label="PRINT" icon="printer" dark class="font-bold"
+                        @click="printOut($refs.printContainer.outerHTML);" rounded />
+                </div>
+                <div class="mt-3" x-ref="printContainer">
+                    <div class="p-3 border-b-2">
+                        <h1 class="font-bold">LGU - MABINI BATANGAS</h1>
+                        <h1>SMS REPORT</h1>
+                    </div>
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th class="border py-2  px-2 text-left">Resident Fullname</th>
+                                <th class="border py-2  px-2 text-left">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse (\App\Models\HistorySms::orderBy('created_at', 'DESC')->get() as $item)
+                                <tr>
+                                    <td class="border py-2 px-2">
+                                        {{ $item->resident->firstname . ' ' . $item->resident->lastname }}</td>
+                                    <td class="border py-2 px-2">
+                                        {{ \Carbon\Carbon::parse($item->created_at)->format('F d, Y h:i A') }}</td>
+
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="3" class="text-center">No data available</td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <x-slot name="footer">
+                <div class="flex justify-end gap-x-4">
+                    <x-button flat label="Cancel" x-on:click="close" />
+
                 </div>
             </x-slot>
         </x-card>
