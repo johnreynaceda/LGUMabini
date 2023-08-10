@@ -50,7 +50,7 @@ class SendSms extends Component
             $numbers = implode(',', collect($this->is_checked)->pluck('number')->toArray());
             $history = Resident::whereIn('id', collect($this->is_checked)->pluck('id')->toArray())->get();
         }
-        $api_key = '1aaad08e0678a1c60ce55ad2000be5bd';
+        $api_key = '3de50e496149a9f64d9dcf2d9ddf802b';
         $sender = 'SEMAPHORE';
         $ch = curl_init();
         $parameters = [
