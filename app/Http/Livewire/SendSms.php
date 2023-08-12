@@ -30,6 +30,7 @@ class SendSms extends Component
             'lists' => $this->barangay ? Resident::when($this->barangay, function ($query) {
                 $query->where('barangay', $this->barangay);
             })->where('status', 1)->orderBy('lastname', 'ASC')->get() : [],
+            'history' => HistorySms::orderBy('created_at', 'DESC')->get(),
         ]);
     }
 
@@ -76,7 +77,7 @@ class SendSms extends Component
 
         foreach ($history as $key => $value) {
             HistorySms::create([
-                'resident_id' => $value->id,
+                'resident_name' => $value->firstname . ' ' . $value->lastname,
             ]);
         }
 

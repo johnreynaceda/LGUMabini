@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::create('history_sms', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('resident_id');
+            $table->string('resident_name');
             $table->timestamps();
         });
     }

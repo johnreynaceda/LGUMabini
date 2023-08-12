@@ -204,10 +204,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse (\App\Models\HistorySms::orderBy('created_at', 'DESC')->get() as $item)
+                            @forelse ($history as $item)
                                 <tr>
                                     <td class="border py-2 px-2">
-                                        {{ $item->resident->firstname . ' ' . $item->resident->lastname }}</td>
+                                        {{ $item->resident_name }}
+                                    </td>
                                     <td class="border py-2 px-2">
                                         {{ \Carbon\Carbon::parse($item->created_at)->format('F d, Y h:i A') }}</td>
 
