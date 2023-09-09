@@ -29,6 +29,9 @@ Route::get('/offices', function () {
 Route::get('/contact-us', function () {
     return view('pages.contact-us');
 })->name('contact-us');
+Route::get('/tourism', function () {
+    return view('pages.tourism');
+})->name('tourism');
 
 //registration
 Route::get('/resident-registration', function () {
@@ -51,4 +54,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

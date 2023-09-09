@@ -2,14 +2,11 @@
     <div class=" relative mx-auto max-w-7xl">
         <div class="py-12">
             <div class="bg-white rounded-lg  overflow-hidden p-6 bg-opacity-80">
-                <header class="text-xl font-rowdies text-green-600">
-                    ABOUT MABINI BATANGAS
-                </header>
-                <div class="mt-2 flex space-x-1 items-end">
-                    <img src="{{ asset('images/mabinilogo.png') }}" class="h-40" alt="">
-                    <h1 class="font-bold text-gray-700">BRIEF HISTORY</h1>
-                </div>
+
                 <div class="mt-2 mx-10">
+                    <header class="text-xl font-rowdies text-green-600">
+                        HISTORY
+                    </header>
                     <p class="indent-12 text-justify">Mabini, officially the Municipality of Mabini (Tagalog: Bayan ng
                         Mabini), is a
                         1st class
@@ -35,10 +32,14 @@
                             </path>
                         </svg>
                         <div class="h-10 w-1 bg-green-600"></div>
-                        <h1 class="font-bold text-xl text-gray-800">GOALS AND OBJECTIVES</h1>
+                        <h1 class="font-bold text-xl text-gray-800">MABINI HYMN</h1>
                     </header>
                     <div class="mt-3 ml-8">
-                        <p class="text-justify">Coming Soon...</p>
+                        <iframe class="w-full" height="500"
+                            src="https://www.youtube.com/embed/Eb_ISEl17v4?si=B2sLrHFcf5853awv"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="mt-20">

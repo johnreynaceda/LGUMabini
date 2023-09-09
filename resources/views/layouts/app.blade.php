@@ -21,18 +21,20 @@
 
     </head>
 
-<body class="font-sans antialiased">
-
-    <div class="w-full mx-auto  bg-white relative">
-        <div class="absolute h-[13.5rem] left-0 right-0 bg-blue-100 border-b-4 border-blue-500">
+<body class="font-sans antialiased relative">
+    <div class="absolute top-0 bg-white left-0  h-full right-0">
+        <img src="{{ asset('images/bg-back.jpg') }}" class="object-cover opacity-30  h-full w-full" alt="">
+    </div>
+    <div class="w-full mx-auto   relative">
+        {{-- <div class="absolute h-[13.5rem] left-0 right-0 bg-blue-100 border-b-4 border-blue-500">
             <img src="{{ asset('images/mabini-bg.jpg') }}" class="object-cover w-full h-full opacity-10" alt="">
-        </div>
+        </div> --}}
         <div class="mx-auto 2xl:max-w-7xl border-b relative">
             <div x-data="{ open: false }"
                 class="relative flex flex-col w-full p-5 h-40 mx-auto  md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between lg:justify-start">
                     <a href="" class="flex items-center space-x-4 justify-center">
-                        <img src="{{ asset('images/mabinilogo.png') }}" class="h-20" alt="">
+                        <img src="{{ asset('images/mabinilogo.png') }}" class="h-32" alt="">
                         <div class="font-bold text-gray-700">
                             <h1 class="text-2xl underline">LGU - MABINI</h1>
                             <h1 class="leading-5">BATANGAS</h1>
@@ -45,8 +47,8 @@
 
                     <div class="inline-flex  items-center gap-5 list-none lg:ml-auto">
                         <div class="text-sm">
-                            <h1>loyfloro@gmail.com</h1>
-                            <span>(043) 757 0882</span>
+                            {{-- <h1>loyfloro@gmail.com</h1>
+                            <span>(043) 757 0882</span> --}}
                         </div>
                         @if (auth()->check())
                             <x-avatar squared xl label="AB" />
@@ -73,10 +75,10 @@
             </div>
         </div>
 
-        <div class="bg-green-600 sticky top-0 bg-opacity-80 z-50 ">
+        <div class="bg-green-600 sticky top-0  z-50 ">
             @if (auth()->check())
                 <div
-                    class="mx-auto max-w-7xl flex items-center space-x-10 w-full px-8 overflow-y-auto  whitespace-nowrap scroll-hidden md:px-6">
+                    class="mx-auto max-w-4xl flex items-center space-x-10 w-full px-12 overflow-y-auto  whitespace-nowrap scroll-hidden md:px-8">
                     <a class=" {{ request()->routeIs('dashboard') ? 'border-yellow-500' : '' }} py-3 pr-2  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
                         href="{{ route('dashboard') }}">
                         Send SMS
@@ -88,9 +90,9 @@
                 </div>
             @else
                 <div
-                    class="mx-auto max-w-7xl flex items-center justify-between w-full px-8 overflow-y-auto  whitespace-nowrap scroll-hidden md:px-6">
+                    class="mx-auto max-w-4xl flex items-center justify-between w-full px-12 overflow-y-auto  whitespace-nowrap scroll-hidden md:px-8">
                     <a class=" {{ request()->routeIs('welcome') ? 'border-yellow-500' : '' }} py-3 pr-2  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
-                        href="#">
+                        href="{{ route('welcome') }}">
                         Home
                     </a>
                     <a class="{{ request()->routeIs('about') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
@@ -102,8 +104,8 @@
                         href="{{ route('barangays') }}">
                         Barangays
                     </a>
-                    <a class="px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
-                        href="#">
+                    <a class="{{ request()->routeIs('tourism') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
+                        href="{{ route('tourism') }}">
                         Tourism
                     </a>
                     <a class="{{ request()->routeIs('offices') ? 'border-yellow-500' : '' }} px-2 py-3  text-white transition ease-in-out transform border-b-4 border-transparent duration-650 focus:outline-none focus:shadow-none md:my-0 hover:border-yellow-500 hover:font-medium hover:text-yellow-400"
@@ -124,9 +126,7 @@
             @endif
         </div>
         <section class="relative">
-            <div class="absolute top-0 left-0 right-0">
-                <img src="{{ asset('images/background.jpg') }}" class="object-cover  h-full w-full" alt="">
-            </div>
+
             {{ $slot }}
         </section>
 
@@ -144,10 +144,10 @@
                 <div class="max-w-xl">
                     <div>
                         <p class="mt-6 text-sm font-medium text-gray-500 md:mt-0">
-                            Copyright2023; |Web-Based Information System wioth Data Mining and SMS Notification
+                            Copyright2023; |Web-Based Information System with Data Mining and SMS Notification
                         </p>
                         <p class="mt-6 text-sm font-medium text-gray-500 md:mt-0">
-                            For Educational Use only | AMA - By Sir Loi(Design Project)
+                            {{-- For Educational Use only | AMA - By Sir Loi(Design Project) --}}
                         </p>
                     </div>
                 </div>

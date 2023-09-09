@@ -1,24 +1,25 @@
 <x-app-layout>
     <div class=" relative mx-auto max-w-7xl">
 
-        <div class="pt-28 ">
-            <h1 class="text-6xl font-rowdies text-gray-600">Welcome to Mabini Batangas Website</h1>
 
-            <div class="mt-7">
-                <span class="text-gray-500">Mabini, Batangas</span>
-            </div>
-            <div class="mt-10">
-                <span class="text-gray-500 text-2xl">We are Happy to SERVE you..</span>
-            </div>
-        </div>
         <div class="mt-28 grid grid-cols-1 lg:grid-cols-3  gap-20">
             <div class="col-span-2">
+                <div class=" ">
+                    <h1 class="text-6xl font-rowdies text-gray-600">Welcome to Mabini Batangas</h1>
 
-                <div>
-                    <img src="{{ asset('images/mabinilogo.png') }}" class="h-40" alt="">
+                    <div class="mt-7">
+                        <span class="text-gray-500">Mabini, Batangas</span>
+                    </div>
+                    <div class="mt-10">
+                        <span class="text-gray-500 text-2xl">We are Happy to SERVE you..</span>
+                    </div>
+                </div>
+                <div class="pt-28">
+                    <img src="{{ asset('images/mayor.png') }}"
+                        class="h-64 w-64 shadow-xl shadow-green-50 rounded-full object-cover" alt="">
                     <h1 class="text-xl mt-2">Message from the Mayor</h1>
-                    <h1 class="font-bold mt-2">Source:<a href="https://www.facebook.com/lloifloro"
-                            class="underline">https://www.facebook.com/lloifloro</a></h1>
+                    <h1 class="font-bold mt-2">Source:<a href="https://www.facebook.com/MabiniBatangas"
+                            class="underline">https://www.facebook.com/MabiniBatangas</a></h1>
                     <p class="text-justify mt-4">The According to legend, the first Malay settlers to inhabit the
                         vast fertile land
                         bordering the two bodies of water now known as Batangas Bay and Balayan Bay first
@@ -49,52 +50,7 @@
                 </div>
             </div>
             <div class="space-y-10">
-                <div>
-                    <div class="bg-green-600 text-white fill-white flex space-x-2 items-center font-bold px-4 py-1.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6">
-                            <path
-                                d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 11H8V13H6V11ZM6 15H8V17H6V15ZM10 11H18V13H10V11ZM10 15H15V17H10V15Z">
-                            </path>
-                        </svg>
-                        <span class="text-lg">Incoming Events</span>
-                    </div>
-                    <div class="mt-2">
-                        <div class="border-b border-green-700 py-2">
-                            <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
-                                <div class="h-12 w-10 px-1 bg-blue-800 text-right">
-                                    <p class="text-white text-sm">22 Jan</p>
-                                </div>
-                                <h1 class="uppercase text-gray-800">Job Fair</h1>
-                            </div>
-                            <div class="t-2 px-4 text-sm">
-                                <p>PhilSCA Charter Day Celebration - January, 22-23 (Th-F)</p>
-                            </div>
-                        </div>
-                        <div class="border-b border-green-700 py-2">
-                            <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
-                                <div class="h-12 w-10 px-1 bg-blue-800 text-right">
-                                    <p class="text-white text-sm">22 Jan</p>
-                                </div>
-                                <h1 class="uppercase text-gray-800">Job Fair</h1>
-                            </div>
-                            <div class="t-2 px-4 text-sm">
-                                <p>PhilSCA Charter Day Celebration - January, 22-23 (Th-F)</p>
-                            </div>
-                        </div>
-                        <div class="border-b border-green-700 py-2">
-                            <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
-                                <div class="h-12 w-10 px-1 bg-blue-800 text-right">
-                                    <p class="text-white text-sm">22 Jan</p>
-                                </div>
-                                <h1 class="uppercase text-gray-800">Job Fair</h1>
-                            </div>
-                            <div class="t-2 px-4 text-sm">
-                                <p>PhilSCA Charter Day Celebration - January, 22-23 (Th-F)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
+                {{-- <div>
                     <div class="bg-green-600 text-white fill-white flex space-x-2 items-center font-bold px-4 py-1.5">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6">
                             <path
@@ -117,7 +73,53 @@
                             <p class="indent-5 text-sm"> LIMA Tech Park SM Batangas Manila </p>
                         </div>
                     </div>
+                </div> --}}
+                <div>
+                    <div class="bg-green-600 text-white fill-white flex space-x-2 items-center font-bold px-4 py-1.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6">
+                            <path
+                                d="M17 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9V3H15V1H17V3ZM4 9V19H20V9H4ZM6 11H8V13H6V11ZM6 15H8V17H6V15ZM10 11H18V13H10V11ZM10 15H15V17H10V15Z">
+                            </path>
+                        </svg>
+                        <span class="text-lg">Announce & Incoming Events</span>
+                    </div>
+                    <div class="mt-2">
+                        <div class="border-b border-green-700 py-2">
+                            <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
+                                <div class="h-12 w-10 px-1 bg-blue-800 text-right">
+                                    <p class="text-white text-sm">22 Jan</p>
+                                </div>
+                                <h1 class="uppercase text-gray-800">Job Fair</h1>
+                            </div>
+                            <div class="t-2 px-4 text-sm">
+                                <p>PhilSCA Charter Day Celebration - August, 22-23 (Th-F)</p>
+                            </div>
+                        </div>
+                        <div class="border-b border-green-700 py-2">
+                            <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
+                                <div class="h-12 w-10 px-1 bg-blue-800 text-right">
+                                    <p class="text-white text-sm">28 Aug</p>
+                                </div>
+                                <h1 class="uppercase text-gray-800">National Heroes Day - Job Fair</h1>
+                            </div>
+                            <div class="t-2 px-4 text-sm">
+                                <p>Batangas Covered Court - August 28, 2023</p>
+                            </div>
+                        </div>
+                        <div class="border-b border-green-700 py-2">
+                            <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
+                                <div class="h-12 w-10 px-1 bg-blue-800 text-right">
+                                    <p class="text-white text-sm">22 Jan</p>
+                                </div>
+                                <h1 class="uppercase text-gray-800">SM STORE - Job Fair</h1>
+                            </div>
+                            <div class="t-2 px-4 text-sm">
+                                <p>PhilSCA Charter Day Celebration - January, 22-23 (Th-F)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="mt-20">
@@ -130,8 +132,57 @@
                 <div class="h-10 w-1 bg-green-600"></div>
                 <h1 class="font-bold text-xl text-gray-800">NEWS AND UPDATES</h1>
             </header>
-            <div class="mt-3 ml-8">
-                <p>Coming Soon...</p>
+            <div class="mt-10 ml-8">
+
+                <section class="relative flex items-center w-full ">
+                    <div class="relative items-center w-full  max-w-7xl">
+                        <div class="relative flex-col items-start m-auto align-middle">
+                            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+                                <div class="relative items-center  gap-12 m-auto lg:inline-flex">
+                                    <div class="max-w-xl text-center lg:text-left ">
+                                        <div>
+                                            <p class="max-w-xl mt-4 text-xl tracking-tight text-gray-800">
+                                                Hon. Mayor Atty. Nilo M. Villanueva, delivering his opening remarks.
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center gap-3 mt-10 lg:justify-start">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-first block w-full mt-12 aspect-square lg:mt-0 lg:order-first">
+                                    <img class="object-cover object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+                                        alt="hero" src="{{ asset('images/news1.jpg') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="relative mt-5 flex items-center w-full ">
+                    <div class="relative items-center w-full  max-w-7xl">
+                        <div class="relative flex-col items-start m-auto align-middle">
+                            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
+                                <div class="relative items-center  gap-12 m-auto lg:inline-flex">
+                                    <div class="max-w-xl text-center lg:text-left ">
+                                        <div>
+                                            <p class="max-w-xl mt-4 text-xl tracking-tight text-gray-800">
+                                                BatStateU and Mabini LGU/MDRRMO staff.
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center gap-3 mt-10 lg:justify-start">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-first block w-full mt-12 aspect-square lg:mt-0 lg:order-2">
+                                    <img class="object-cover object-center w-full mx-auto bg-gray-300 lg:ml-auto"
+                                        alt="hero" src="{{ asset('images/news2.jpg') }}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
     </div>
