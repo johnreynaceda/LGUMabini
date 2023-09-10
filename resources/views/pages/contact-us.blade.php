@@ -2,7 +2,7 @@
     <div class=" relative mx-auto max-w-7xl">
         <div class="py-12">
             <div class="bg-white rounded-lg  overflow-hidden p-6 bg-opacity-80">
-                <header class="text-xl font-rowdies text-green-600">
+                <header class="text-xl font-rowdies s text-green-600">
                     LIST OF OFFICES
                 </header>
                 <div class="py-5">
