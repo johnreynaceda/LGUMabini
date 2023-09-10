@@ -13,21 +13,23 @@ class ResidentRegistration extends Component
     use WithFileUploads;
     use Actions;
 
-    public $barangay,$firstname, $middlename, $lastname, $address, $contact, $stay, $image;
+    public $barangay, $firstname, $middlename, $lastname, $address, $contact, $stay, $image, $na;
     public function render()
     {
         return view('livewire.resident-registration');
     }
 
-    public function submitRecord(){
+    public function submitRecord()
+    {
         $this->validate([
             'barangay' => 'required',
             'firstname' => 'required',
             'lastname' => 'required',
             'address' => 'required',
+            'middlename' => $this->na == false ? 'required' : '',
             'contact' => 'required|digits:11|unique:residents,contact_number',
             'stay' => 'required',
-            'image' =>'required'
+            'image' => 'required'
         ]);
 
         DB::beginTransaction();
@@ -35,7 +37,7 @@ class ResidentRegistration extends Component
             'barangay' => $this->barangay,
             'firstname' => $this->firstname,
             'lastname' => $this->lastname,
-            'middlename' => $this->middlename == null ? null : $this->middlename,
+            'middlename' => $this->middlename == null ? '' : $this->middlename,
             'address' => $this->address,
             'contact_number' => $this->contact,
             'no_of_years' => $this->stay,
@@ -50,4 +52,17 @@ class ResidentRegistration extends Component
         return redirect()->route('registration-complete');
 
     }
+
+    public function updatedNa()
+    {
+        if ($this->na == true) {
+            $this->middlename = "";
+        } else {
+            $this->validate([
+                'middlename' => 'required'
+            ]);
+        }
+    }
+
+
 }

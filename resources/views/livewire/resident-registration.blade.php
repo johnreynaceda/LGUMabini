@@ -43,8 +43,13 @@
         </div>
         <div class=" mt-5">
             <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
-                <x-input label="First Name" wire:model.defer="firstname" />
-                <x-input label="Middle Initial" wire:model.defer="middlename" />
+                <x-input label="First Name" wire:model.defer="firstname" required />
+                <div class="col-span-1 flex flex-1 space-x-3  w-full items-end">
+                    <div class="div w-full">
+                        <x-input label="Middle Initial" class="w-full flex-1" wire:model.defer="middlename" />
+                    </div>
+                    <x-checkbox id="right-label" label="N/A" wire:model="na" />
+                </div>
                 <x-input label="Last Name" wire:model.defer="lastname" />
                 <div class="xl:col-span-2">
                     <x-input label="Address" wire:model.defer="address" />

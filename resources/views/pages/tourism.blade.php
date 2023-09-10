@@ -1,7 +1,16 @@
 <x-app-layout>
     <div class=" relative mx-auto max-w-7xl">
-        <div class="py-12">
 
+        <div class="py-12">
+            <header class="flex space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-gray-700">
+                    <path
+                        d="M19 22H5C3.34315 22 2 20.6569 2 19V3C2 2.44772 2.44772 2 3 2H17C17.5523 2 18 2.44772 18 3V10H22V19C22 20.6569 20.6569 22 19 22ZM18 12V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V12H18ZM5 6V12H11V6H5ZM5 13V15H15V13H5ZM5 16V18H15V16H5ZM7 8H9V10H7V8Z">
+                    </path>
+                </svg>
+                <div class="h-10 w-1 bg-green-600"></div>
+                <h1 class="font-bold text-xl text-gray-800">TOURIST SPOTS</h1>
+            </header>
             <section class="flex items-center w-full ">
                 <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-20 max-w-7xl">
                     <div class="grid grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-3">

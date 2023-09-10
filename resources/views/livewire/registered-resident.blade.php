@@ -32,7 +32,12 @@
                         @forelse ($residents as $item)
                             <tr>
                                 <td class="border border-gray-700 text-gray-600  px-3 py-1">
-                                    {{ $item->firstname . ' ' . $item->middlename[0] . '. ' . $item->lastname }}
+                                    @if ($item->middlename == '')
+                                        {{ $item->firstname . ' ' . $item->lastname }}
+                                    @else
+                                        {{ $item->firstname . ' ' . $item->middlename[0] . '. ' . $item->lastname }}
+                                    @endif
+
                                 </td>
                                 <td class="border border-gray-700 text-gray-600  px-3 py-1">
                                     {{ $item->barangay }}
