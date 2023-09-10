@@ -5,9 +5,9 @@
 
                 <div class="mt-2 mx-10">
                     <header class="text-xl font-rowdies text-green-600">
-                        HISTORY
+                        BRIEF HISTORY
                     </header>
-                    <p class="indent-12 text-justify">Mabini, officially the Municipality of Mabini (Tagalog: Bayan ng
+                    <p class="indent-12 text-justify mt-6 ">Mabini, officially the Municipality of Mabini (Tagalog: Bayan ng
                         Mabini), is a
                         1st class
                         municipality in the province of Batangas, Philippines. According to the 2020 census, it has a
@@ -163,13 +163,13 @@
                         <div class="flex flex-col space-y-3">
                             <p class="text-justify">
                             <h1 class="font-bold">Mabini, Batangas</h1>
-                            A God – inspired community, with disciplines, enlightened, economically progressive
+                            <p class="indent-12 text-justify">A God – inspired community, with disciplines, enlightened, economically progressive
                             constituents, being propelled by sustainable, eco-friendly industrial and agri-tourism
                             industries, led by visionary and competent bureaucracy.
                             </p>
                             <p class="text-justify">
                             <h1 class="font-bold">Vision Element and Descriptors</h1>
-                            The vision statement illustrates the desired qualities of the municipality in terms of major
+                            <p class="indent-12 text-justify">The vision statement illustrates the desired qualities of the municipality in terms of major
                             elements, namely, built environment, natural environment, local leadership, people as a
                             society, local economy and the qualities of the local government.
                             </p>
@@ -177,14 +177,14 @@
 
                             <p class="text-justify">
                             <h1 class="font-bold">Outward-Looking</h1>
-                            Paradise of Southern Batangas, location of contemporary businesses and tourism sector
+                            <p class="indent-12 text-justify">Paradise of Southern Batangas, location of contemporary businesses and tourism sector
                             with tranquil community. Looking forward to what Mabini wants to become and accomplish
                             in the future. Mabini anticipates becoming a center for cutting-edge, competitive, and
                             innovative businesses as well as a pioneer in sustainable tourism, both within its own
                             community and among the other municipalities in Southern Batangas.</p>
                             <p class="text-justify">
                             <h1 class="font-bold">Outward and Inward Looking: Built Environment</h1>
-                            Protected admist growing urban development. While Mabini keeps pushing for urban growth, it
+                            <p class="indent-12 text-justify"> Protected admist growing urban development. While Mabini keeps pushing for urban growth, it
                             makes sure that all of its development activities take good care of the area’s natural
                             resources. Every significant infrastructure project takes the environment and its effects
                             into account. As a result, plans often include attempts to safeguard crucial danger points
@@ -192,7 +192,7 @@
                             </p>
                             <p class="text-justify">
                             <h1 class="font-bold">Inward-Looking: Natural Environment</h1>
-                            Natural resources and territorial boundaries are protected. Mabini value their natural
+                            <p class="indent-12 text-justify">Natural resources and territorial boundaries are protected. Mabini value their natural
                             resources and geographic limits as a part of their legacy. As a result, planning for every
                             development initiative always includes consideration of how it can damage the environment.
                             The detrimental impact of development on its natural resources is being addressed. More
@@ -215,7 +215,7 @@
                         <h1 class="font-bold text-xl text-gray-800">OFFICIAL COLORS</h1>
                     </header>
                     <div class="mt-3 ml-8">
-                        <p class="text-justify">Coming Soon...</p>
+                        <p class="indent-12 text-justify font-bold text-xl text-green-600">DARK GREEN</p>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <div>
     <div class="mt-10">
         <div class="lg:w-96">
-            <x-native-select label="Barangay" wire:model.defer="barangay">
+            <x-native-select label="*Barangay" wire:model.defer="barangay">
                 <option selected hidden>Select an Option</option>
                 <option value="ANILAO EAST">ANILAO EAST</option>
                 <option value="ANILAO PROPER">ANILAO PROPER</option>
@@ -43,21 +43,21 @@
         </div>
         <div class=" mt-5">
             <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
-                <x-input label="First Name" wire:model.defer="firstname" required />
+                <x-input label="*First Name" wire:model.defer="firstname" required />
                 <div class="col-span-1 flex flex-1 space-x-3  w-full items-end">
                     <div class="div w-full">
-                        <x-input label="Middle Initial" class="w-full flex-1" wire:model.defer="middlename" />
+                        <x-input label="*Middle Initial" class="w-full flex-1" wire:model.defer="middlename" />
                     </div>
                     <x-checkbox id="right-label" label="N/A" wire:model="na" />
                 </div>
-                <x-input label="Last Name" wire:model.defer="lastname" />
+                <x-input label="*Last Name" wire:model.defer="lastname" />
                 <div class="xl:col-span-2">
-                    <x-input label="Address" wire:model.defer="address" />
+                    <x-input label="*Address" wire:model.defer="address" />
                 </div>
-                <x-input label="Contact Number" wire:model.defer="contact" />
-                <x-input type="number" label="Years of Stay" wire:model.defer="stay" />
+                <x-input label="*Contact Number" wire:model.defer="contact" />
+                <x-input type="*number" label="*Years of Stay" wire:model.defer="stay" />
                 <div class="xl:col-span-3">
-                    <label class="text-sm text-gray-700 font-medium" for="">Upload your ID</label>
+                    <label class="text-sm text-gray-700 font-medium" for="">*Upload your ID</label>
 
                     @if ($image)
                         <div class="relative w-[40rem] ">

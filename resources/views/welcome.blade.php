@@ -2,25 +2,25 @@
     <div class=" relative mx-auto max-w-7xl">
 
 
-        <div class="mt-28 grid grid-cols-1 lg:grid-cols-3  gap-20">
+        <div class="mt-10 grid grid-cols-1 lg:grid-cols-3  gap-12">
             <div class="col-span-2">
                 <div class=" ">
                     <h1 class="text-6xl font-rowdies text-gray-600">Welcome to Mabini Batangas</h1>
 
-                    <div class="mt-7">
+                    <div class="mt-2">
                         <span class="text-gray-500">Mabini, Batangas</span>
                     </div>
-                    <div class="mt-10">
+                    <div class="mt-2">
                         <span class="text-gray-500 text-2xl">We are Happy to SERVE you..</span>
                     </div>
                 </div>
-                <div class="pt-28">
+                <div class="pt-23">
                     <img src="{{ asset('images/mayor.png') }}"
                         class="h-64 w-64 shadow-xl shadow-green-50 rounded-full object-cover" alt="">
                     <h1 class="text-xl mt-2">Message from the Mayor</h1>
                     <h1 class="font-bold mt-2">Source:<a href="https://www.facebook.com/MabiniBatangas"
                             class="underline">https://www.facebook.com/MabiniBatangas</a></h1>
-                    <p class="text-justify mt-4">The According to legend, the first Malay settlers to inhabit the
+                    <p class="indent-12 text-justify mt-8">The According to legend, the first Malay settlers to inhabit the
                         vast fertile land
                         bordering the two bodies of water now known as Batangas Bay and Balayan Bay first
                         found
@@ -43,7 +43,7 @@
                         not take long before several nearby regions were inhabited to comprise the whole
                         province of Kumintang, better known later as Batangas.</p>
 
-                    <center class="mt-5">
+                    <center class= "mt-5">
                         <h1 class="font-bold">Nilo Villanueva</h1>
                         <span class="border-t border-gray-700">Municipal Mayor</span>
                     </center>
@@ -87,20 +87,22 @@
                         <div class="border-b border-green-700 py-2">
                             <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
                                 <div class="h-12 w-10 px-1 bg-blue-800 text-right">
-                                    <p class="text-white text-sm">22 Jan</p>
+                                    <p class="text-white text-sm">22 Sep</p>
                                 </div>
                                 <h1 class="uppercase text-gray-800">Job Fair</h1>
                             </div>
                             <div class="t-2 px-4 text-sm">
-                                <p>PhilSCA Charter Day Celebration - August, 22-23 (Th-F)</p>
+                                <p>WHERE: MUNICIPALITY GYMNASIUM</p>
+                                <p>WHENE: OCTOBER 1, 2023</p>
+                                <p>TIME: 1 PM </p>
                             </div>
                         </div>
                         <div class="border-b border-green-700 py-2">
                             <div class="flex space-x-2 items-center font-bold px-4 py-1 5">
                                 <div class="h-12 w-10 px-1 bg-blue-800 text-right">
-                                    <p class="text-white text-sm">28 Aug</p>
+                                    <p class="text-white text-sm">30 Sept</p>
                                 </div>
-                                <h1 class="uppercase text-gray-800">National Heroes Day - Job Fair</h1>
+                                <h1 class="uppercase text-gray-800">Bayanihan Sa Mabini - Job Fair</h1>
                             </div>
                             <div class="t-2 px-4 text-sm">
                                 <p>Batangas Covered Court - August 28, 2023</p>
@@ -111,10 +113,10 @@
                                 <div class="h-12 w-10 px-1 bg-blue-800 text-right">
                                     <p class="text-white text-sm">22 Jan</p>
                                 </div>
-                                <h1 class="uppercase text-gray-800">SM STORE - Job Fair</h1>
+                                <h1 class="uppercase text-gray-800">Mabini LGU JOB Fair</h1>
                             </div>
                             <div class="t-2 px-4 text-sm">
-                                <p>PhilSCA Charter Day Celebration - January, 22-23 (Th-F)</p>
+                                <p>September 30 , 2023</p>
                             </div>
                         </div>
                     </div>
@@ -132,6 +134,9 @@
                 <div class="h-10 w-1 bg-green-600"></div>
                 <h1 class="font-bold text-xl text-gray-800">NEWS AND UPDATES</h1>
             </header>
+            <div class="mt-2">
+            <p class="indent-12 text-justify mt-2">For the Latest News and Updates please always visit our Official Website</p>
+                </div>
             <div class="mt-10 ml-8">
 
                 <section class="flex items-center w-full ">
