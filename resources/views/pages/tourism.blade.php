@@ -72,6 +72,7 @@
                         <figure class="mt-10 lg:col-span-3">
                             <img class="object-cover w-full bg-gray-200 lg:h-96" src="{{ asset('images/pic4.jpg') }}"
                                 alt="" width="1310" height="873">
+                                "Enjoy and relax in the natural climate and peaceful place in Mabini, Batangas."
                         </figure>
                     </div>
                 </div>
@@ -123,6 +124,9 @@
                         <figure class="mt-10 lg:col-span-3">
                             <img class="object-cover w-full bg-gray-200 lg:h-96" src="{{ asset('images/pic8.jpg') }}"
                                 alt="" width="1310" height="873">
+                                <p class="mt-3 text-base text-gray-800">
+                                "Enjoy and relax in the natural climate and peaceful place in Mabini, Batangas."
+                            </p>
                         </figure>
                     </div>
                 </div>

@@ -27,7 +27,7 @@
                         <h1 class="font-bold text-xl text-gray-800">ANILAO EAST</h1>
                     </header>
                     <div class="mt-3 ml-8">
-                        <p>Description Here...</p>
+                        <p>Email:anilao_east@yahoo.com </p>
                     </div>
                 </div>
                 <div class="mt-10">
@@ -41,7 +41,7 @@
                         <h1 class="font-bold text-xl text-gray-800">ANILAO PROPER</h1>
                     </header>
                     <div class="mt-3 ml-8">
-                        <p>Description Here...</p>
+                    <p>Email: ma.flerida_boongaling@yahoo.com</p>
                     </div>
                 </div>
                 <div class="mt-10">
@@ -55,7 +55,7 @@
                         <h1 class="font-bold text-xl text-gray-800">BAGALANGIT</h1>
                     </header>
                     <div class="mt-3 ml-8">
-                        <p>Description Here...</p>
+                    <p>Email: bagalangit_mabini@yahoo.com</p>
                     </div>
                     <div class="mt-10">
                         <header class="flex space-x-2 items-center">
@@ -68,7 +68,7 @@
                             <h1 class="font-bold text-xl text-gray-800">BULACAN</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: mabinibulacan@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -82,7 +82,7 @@
                             <h1 class="font-bold text-xl text-gray-800">CALAMIAS</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangaycalamiasofficial01@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -96,7 +96,7 @@
                             <h1 class="font-bold text-xl text-gray-800">ESTRELLA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangayestrella@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -110,7 +110,7 @@
                             <h1 class="font-bold text-xl text-gray-800">GASANG</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangaygasang0418@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -124,7 +124,7 @@
                             <h1 class="font-bold text-xl text-gray-800">LAUREL</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangaylaurel1960@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -138,7 +138,7 @@
                             <h1 class="font-bold text-xl text-gray-800">LIGAYA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: ligayamabini@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -152,7 +152,7 @@
                             <h1 class="font-bold text-xl text-gray-800">MAINAGA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: lgumainaga@gmail.com </p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -166,7 +166,7 @@
                             <h1 class="font-bold text-xl text-gray-800">MAINIT</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: mainitmabinibatangas_5@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -181,7 +181,7 @@
                             <h1 class="font-bold text-xl text-gray-800">MAJUBEN</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgy.majuben@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -196,7 +196,7 @@
                             <h1 class="font-bold text-xl text-gray-800">MALIMATOC I</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgymalimatoc1@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -211,7 +211,7 @@
                             <h1 class="font-bold text-xl text-gray-800">MALIMATOC II</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgy.malimatoc2@outlook.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -226,7 +226,7 @@
                             <h1 class="font-bold text-xl text-gray-800">NAG-IBA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangay.nagiba2018@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -241,7 +241,7 @@
                             <h1 class="font-bold text-xl text-gray-800">PILAHAN</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgypilahan@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -256,7 +256,7 @@
                             <h1 class="font-bold text-xl text-gray-800">POBLACION</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: teampoblacion1@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -271,7 +271,7 @@
                             <h1 class="font-bold text-xl text-gray-800">PULANG LUPA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: pulanglupa_mabini@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -286,7 +286,7 @@
                             <h1 class="font-bold text-xl text-gray-800">PULONG ANAHAO</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: p.anahao2023@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -301,7 +301,7 @@
                             <h1 class="font-bold text-xl text-gray-800">PULONG BALIBAGUHAN</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: pulongbalobaguhanmabinibats@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -316,7 +316,7 @@
                             <h1 class="font-bold text-xl text-gray-800">PULONG NIOGAN</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: pulongniogan@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -331,7 +331,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SAGUING</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgysaguing.mabini@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -346,7 +346,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SAMPAGUITA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: sampaguitamb@yahoo.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -361,7 +361,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SAN FRANCISCO</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: sanfranciscomabini@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -376,7 +376,9 @@
                             <h1 class="font-bold text-xl text-gray-800">SAN JOSE</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangaysanjosemabinibatangas@gmail.com
+
+</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -391,7 +393,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SAN JUAN</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgy.sanjuan.mabini@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -406,7 +408,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SAN TEODORO</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: santeodoromabinibatangas@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -421,7 +423,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SANTA ANA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgysantaana01@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -436,7 +438,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SANTA MESA</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: mabinisantamesa@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -451,7 +453,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SANTO NINO</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: sto.nino.capt.deliacastillo@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -466,7 +468,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SANTO TOMAS</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgy.sto.tomas30@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -481,7 +483,7 @@
                             <h1 class="font-bold text-xl text-gray-800">SOLO</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: solobarangay@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -496,7 +498,7 @@
                             <h1 class="font-bold text-xl text-gray-800">TALAGA EAST</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: brgy.talagaeast@gmail.com</p>
                         </div>
                     </div>
                     <div class="mt-10">
@@ -511,7 +513,7 @@
                             <h1 class="font-bold text-xl text-gray-800">TALAGA PROPER</h1>
                         </header>
                         <div class="mt-3 ml-8">
-                            <p>Description Here...</p>
+                        <p>Email: barangay_talagaproper@yahoo.com</p>
                         </div>
                     </div>
                 </div>

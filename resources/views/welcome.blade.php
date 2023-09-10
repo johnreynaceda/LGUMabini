@@ -155,10 +155,10 @@
                                 <img class="w-full h-full bg-gray-200 object-cover"
                                     src="{{ asset('images/news2.jpg') }}" alt="">
 
-
-                                <p class="mt-3 text-xl text-gray-800">
+                                    <p class="mt-3 text-xl text-gray-800">
                                     BatStateU and Mabini LGU/MDRRMO staff.
                                 </p>
+                                
                             </figure>
                         </div>
                     </div>
