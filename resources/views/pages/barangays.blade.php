@@ -5,16 +5,15 @@
                 <header class="text-xl font-rowdies text-green-600">
                     LIST OF BARANGAYS
                 </header>
-                <p class="mt-5 text-justify indent-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-                    necessitatibus
-                    voluptates laborum
-                    aut repellendus quod velit commodi itaque sed temporibus debitis repellat in molestias, praesentium
-                    earum facere reiciendis, dolorum magni hic natus incidunt. Voluptatum reprehenderit, error
-                    temporibus eos voluptate deserunt. Illum modi delectus quibusdam quo dolorum ea, mollitia ut, vitae
-                    earum provident explicabo fuga tenetur id, veniam optio officia ex aliquid deleniti! Temporibus,
-                    odio. In facilis nostrum distinctio? Nemo ratione deserunt, tenetur ad adipisci illo, a vero,
-                    reiciendis id asperiores repellat incidunt eos unde odio fuga dicta optio omnis saepe delectus
-                    quisquam sunt error pariatur. Minima nam excepturi necessitatibus ex?</p>
+                <p class="mt-5 text-justify indent-12">
+                    Barangay Mabini in Batangas is a charming and vibrant community nestled in the heart of the
+                    Philippines. Located in the picturesque province of Batangas, this barangay is known for its warm
+                    and welcoming residents, who take pride in their rich cultural heritage and strong sense of
+                    community. Mabini Barangay boasts stunning natural beauty, with lush landscapes and scenic views
+                    that provide a peaceful and serene backdrop to everyday life. Its proximity to the coast makes it a
+                    haven for beach lovers and water enthusiasts, offering opportunities for swimming, snorkeling, and
+                    enjoying the pristine beaches along the Batangas coastline.
+                </p>
 
 
                 <div class="mt-20">

@@ -5,16 +5,16 @@
                 <header class="text-xl font-rowdies text-green-600">
                     LIST OF OFFICES
                 </header>
-                <p class="mt-5 text-justify indent-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-                    necessitatibus
-                    voluptates laborum
-                    aut repellendus quod velit commodi itaque sed temporibus debitis repellat in molestias, praesentium
-                    earum facere reiciendis, dolorum magni hic natus incidunt. Voluptatum reprehenderit, error
-                    temporibus eos voluptate deserunt. Illum modi delectus quibusdam quo dolorum ea, mollitia ut, vitae
-                    earum provident explicabo fuga tenetur id, veniam optio officia ex aliquid deleniti! Temporibus,
-                    odio. In facilis nostrum distinctio? Nemo ratione deserunt, tenetur ad adipisci illo, a vero,
-                    reiciendis id asperiores repellat incidunt eos unde odio fuga dicta optio omnis saepe delectus
-                    quisquam sunt error pariatur. Minima nam excepturi necessitatibus ex?</p>
+                <p class="mt-5 text-justify indent-12">
+                    The Local Government Unit (LGU) in Mabini, Batangas, plays a pivotal role in the town's governance
+                    and development. Committed to serving its residents, the LGU diligently oversees various essential
+                    services and initiatives, ranging from education and healthcare to infrastructure and environmental
+                    preservation. With a strong focus on community welfare, the LGU strives to enhance the quality of
+                    life for Mabini's citizens through responsive governance and sustainable urban planning. Through
+                    collaborative efforts with the local community, the LGU in Mabini aims to promote economic growth,
+                    preserve its rich cultural heritage, and protect the town's natural beauty, ensuring that it remains
+                    a welcoming and vibrant place to live and visit.
+                </p>
 
                 <div class="mt-20">
                     <header class="flex space-x-2 items-center">

@@ -3,9 +3,20 @@
         <div class="py-12">
             <div class="bg-white rounded-lg  overflow-hidden p-6 bg-opacity-80">
                 <header class="text-xl font-rowdies text-green-600">
-                    CONTACT US
+                    LIST OF OFFICES
                 </header>
-
+                <div class="py-5">
+                    <p class="text-justify indent-12 leading-7">For inquiries, assistance, or to get in touch with the
+                        Local
+                        Government Unit
+                        (LGU) of Mabini,
+                        Batangas, our contact information is readily available to serve you. Whether you have questions
+                        regarding local services, government programs, or wish to address community concerns, we
+                        encourage open communication. You can reach us through our official website, phone numbers, or
+                        visit our municipal office in person. Your feedback and engagement are vital to our commitment
+                        to serving the residents and visitors of Mabini, Batangas effectively. We look forward to
+                        hearing from you and working together to build a thriving and vibrant community.</p>
+                </div>
                 <div class="mt-20">
                     <header class="flex space-x-2 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-gray-600">

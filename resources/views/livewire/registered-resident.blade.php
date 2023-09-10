@@ -2,7 +2,7 @@
     <div class="bg-white bg-opacity-80 overflow-hidden shadow-sm sm:rounded-lg">
         <div class="p-6">
             <header class="text-xl  text-gray-700 font-rowdies">
-                Registered Residents
+                Register Residents
             </header>
             <div class="mt-5">
                 <table id="example" class="table-auto mt-5" style="width:100%">

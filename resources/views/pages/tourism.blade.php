@@ -11,6 +11,20 @@
                 <div class="h-10 w-1 bg-green-600"></div>
                 <h1 class="font-bold text-xl text-gray-800">TOURIST SPOTS</h1>
             </header>
+            <div class="py-5 text-justify">
+                <p class="indent-10 leading-7">Mabini, Batangas, is a captivating destination that beckons travelers
+                    with its
+                    diverse tourism
+                    offerings. Along its picturesque coastline, visitors can explore world-class dive sites in Anilao,
+                    revealing vibrant coral reefs and an abundance of marine life. For those who prefer terrestrial
+                    adventures, the hike to the summit of Mt. Gulugod Baboy offers breathtaking panoramic views of
+                    Batangas Bay and Balayan Bay. The town also boasts pristine beaches like Sepoc Beach, where powdery
+                    sands and clear waters provide a tranquil escape. Cultural enthusiasts can delve into the town's
+                    history at St. Joseph the Patriarch Parish, a historic church that showcases its colonial past. For
+                    eco-tourism enthusiasts, the Sepoc Beach Sanctuary allows travelers to enjoy the untouched beauty of
+                    the area while supporting vital conservation efforts. Mabini, Batangas, promises a well-rounded and
+                    enriching experience for all types of travelers.</p>
+            </div>
             <section class="flex items-center w-full ">
                 <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-20 max-w-7xl">
                     <div class="grid grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-3">

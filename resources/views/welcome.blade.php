@@ -134,55 +134,30 @@
             </header>
             <div class="mt-10 ml-8">
 
-                <section class="relative flex items-center w-full ">
+                <section class="flex items-center w-full ">
                     <div class="relative items-center w-full  max-w-7xl">
-                        <div class="relative flex-col items-start m-auto align-middle">
-                            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
-                                <div class="relative items-center  gap-12 m-auto lg:inline-flex">
-                                    <div class="max-w-xl text-center lg:text-left ">
-                                        <div>
-                                            <p class="max-w-xl mt-4 text-xl tracking-tight text-gray-800">
-                                                Hon. Mayor Atty. Nilo M. Villanueva, delivering his opening remarks.
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center gap-3 mt-10 lg:justify-start">
+                        <div class="grid grid-cols-2 gap-6 py-5 md:grid-cols-3 lg:grid-cols-2">
+                            <figure class="h-[40rem]">
+                                <img class="w-full bg-gray-200 h-full object-cover"
+                                    src="{{ asset('images/news1.jpg') }}" alt="">
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order-first block w-full mt-12 aspect-square lg:mt-0 lg:order-first">
-                                    <img class="object-cover object-center w-full mx-auto bg-gray-300 lg:ml-auto"
-                                        alt="hero" src="{{ asset('images/news1.jpg') }}">
-                                </div>
-                            </div>
+
+                                <p class="mt-3 text-xl text-gray-800">
+                                    Hon. Mayor Atty. Nilo M. Villanueva, delivering his opening remarks.
+                                </p>
+                            </figure>
+                            <figure class="h-[40rem]">
+                                <img class="w-full h-full bg-gray-200 object-cover"
+                                    src="{{ asset('images/news2.jpg') }}" alt="">
+
+
+                                <p class="mt-3 text-xl text-gray-800">
+                                    BatStateU and Mabini LGU/MDRRMO staff.
+                                </p>
+                            </figure>
                         </div>
                     </div>
                 </section>
-                <section class="relative mt-5 flex items-center w-full ">
-                    <div class="relative items-center w-full  max-w-7xl">
-                        <div class="relative flex-col items-start m-auto align-middle">
-                            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-24">
-                                <div class="relative items-center  gap-12 m-auto lg:inline-flex">
-                                    <div class="max-w-xl text-center lg:text-left ">
-                                        <div>
-                                            <p class="max-w-xl mt-4 text-xl tracking-tight text-gray-800">
-                                                BatStateU and Mabini LGU/MDRRMO staff.
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center gap-3 mt-10 lg:justify-start">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order-first block w-full mt-12 aspect-square lg:mt-0 lg:order-2">
-                                    <img class="object-cover object-center w-full mx-auto bg-gray-300 lg:ml-auto"
-                                        alt="hero" src="{{ asset('images/news2.jpg') }}">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
             </div>
         </div>
     </div>
